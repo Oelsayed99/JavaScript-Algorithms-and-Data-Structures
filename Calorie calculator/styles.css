@@ -1,0 +1,124 @@
+:root {
+  --light-grey: #f5f6f7;
+  --dark-blue: #0a0a23;
+  --fcc-blue: #1b1b32;
+  --light-yellow: #fecc4c;
+  --dark-yellow: #feac32;
+  --light-pink: #ffadad;
+  --dark-red: #850000;
+  --light-green: #acd157;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--fcc-blue);
+  color: var(--light-grey);
+  margin: 0;
+  padding: 1rem;
+}
+
+main {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 720px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+input,
+select,
+button {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--dark-yellow);
+  background-color: #fff9ea;
+  color: var(--dark-blue);
+}
+
+button {
+  background-color: var(--light-yellow);
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--dark-yellow);
+}
+
+fieldset {
+  border: 1px solid var(--light-grey);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+legend {
+  font-weight: bold;
+  color: var(--light-yellow);
+}
+
+.log-sections {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .log-sections {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.controls {
+  margin: 1rem 0;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.output {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #ffffff11;
+  border: 2px solid var(--light-grey);
+  border-radius: 6px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.output span {
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+.surplus {
+  color: var(--light-pink);
+}
+
+.deficit {
+  color: var(--light-green);
+}
